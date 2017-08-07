@@ -1,0 +1,1454 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#"
+     xml:base="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:untitled-ontology-2="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#is_a -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#is_a">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Acting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Acting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Expression"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Role_Playing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Algorithm"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action_Draft"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#LineDrawing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Movement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#PatternBuilding"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pick-up_and_delivery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Tile_Placement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Trading"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action_Card -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action_Card">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action_Draft -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action_Draft">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Draft"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action_Point -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action_Point">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action_Programing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action_Programing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Algorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Algorithm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Mechanics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Area_Control -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Area_Control">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Area_Enclosure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Area_Enclosure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Goal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Area_Movement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Area_Movement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#point-to-pointMovement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Areas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Areas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Component"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#LineDrawing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Modular_Board"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Movement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pick-up_and_delivery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Assymetry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Assymetry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Game_Balance"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Partnership"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pool_Building"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Auction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Auction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Commodity_Speculation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Betting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Betting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Gamble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Card -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Card">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Token"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action_Card"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Card_Drafting"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Modular_Board"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pattern"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Trick-Taking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Card_Drafting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Card_Drafting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Draft"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Chit-pull -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Chit-pull">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Co-Operative_Play -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Co-Operative_Play">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Teams"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Colection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Colection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Card_Drafting"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pick-up_and_delivery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pool_Building"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Resource_management"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Trick-Taking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Commodity_Speculation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Commodity_Speculation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Component -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Component">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Data_Representation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Data_Representation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Data_Representation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Mechanics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Deck -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Deck">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Random_Draw"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Dice_Rolling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Dice_Rolling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Random_Draw"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Die_Marker"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Gamble"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Movement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Press_Your_Luck"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>From dice rolling and roll&amp;move</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Die -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Die">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Component"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Gamble"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Game_Balance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Memory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pattern"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#PatternBuilding"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pool_Building"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#VariablePhaseOrder"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Die_Marker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Die_Marker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Die"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Commodity_Speculation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>from Dice rolling</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Draft -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Draft">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pool_Building"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Trick-Taking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Expression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Expression">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Teams"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Gamble -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Gamble">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Commodity_Speculation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Dice_Rolling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Memory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Press_Your_Luck"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Simultaneous_Action_Selection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#VariablePhaseOrder"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#time-track"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Game_Balance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Game_Balance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Ruleset"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Player_Elimination"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Goal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Goal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Algorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Grid_Movement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Grid_Movement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Area_Movement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Impulse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Impulse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Phase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#LineDrawing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#LineDrawing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Area_Enclosure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Expression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Memory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Movement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Paper-and-Pencil"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#PatternBuilding"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pick-up_and_delivery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Mechanics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Mechanics">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:comment>mechanics by MDA</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Memory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Memory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Goal"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action_Programing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Colection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Draft"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Gamble"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Modular_Board"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#PatternBuilding"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pattern_Recognition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pool_Building"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Tile_Placement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Modular_Board -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Modular_Board">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Component"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Areas"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Game_Balance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#LineDrawing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pattern_Recognition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pick-up_and_delivery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Tile_Placement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Movement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Movement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Area_Control"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#PatternBuilding"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pattern_Recognition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pick-up_and_delivery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>from Roll&amp;move</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#NetworkBuilding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#NetworkBuilding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#LineDrawing"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Tile_Placement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Paper-and-Pencil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Paper-and-Pencil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Component"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Colection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Expression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#LineDrawing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pattern_Recognition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Resource_management"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Voting"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Partnership -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Partnership">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Teams"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pattern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pattern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Component"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Areas"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Game_Balance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Memory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Modular_Board"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#PatternBuilding"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pattern_Recognition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Set_Colection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Tile_Placement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#PatternBuilding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#PatternBuilding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Area_Enclosure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Storytelling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Tile_Placement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pattern_Recognition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pattern_Recognition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Goal"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Memory"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Phase -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Phase">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Ruleset"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Game_Balance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Simultaneous_Action_Selection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Trick-Taking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pick-up_and_delivery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pick-up_and_delivery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Goal"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#LineDrawing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Resource_management"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Player_Elimination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Player_Elimination">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Goal"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Game_Balance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Take_That"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pool_Building -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pool_Building">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Colection"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Draft"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Resource_management"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Press_Your_Luck -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Press_Your_Luck">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Random_Draw -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Random_Draw">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Data_Representation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Resource_management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Resource_management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Goal"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Betting"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pick-up_and_delivery"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pool_Building"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Tile_Placement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Trick-Taking"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Rock-Paper-Scizors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Rock-Paper-Scizors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Game_Balance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Role_Playing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Role_Playing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Ruleset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Ruleset">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Algorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Secret_Unit_Deployment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Secret_Unit_Deployment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Set_Colection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Set_Colection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Colection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Simultaneous_Action_Selection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Simultaneous_Action_Selection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Card_Drafting"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Singing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Singing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Expression"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Stock_Holding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Stock_Holding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Commodity_Speculation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Storytelling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Storytelling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Expression"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Role_Playing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Take_That -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Take_That">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Area_Control"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Auction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Player_Elimination"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Voting"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>take that</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Teams -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Teams">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Ruleset"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Game_Balance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Tile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Tile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Token"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Colection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Draft"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#LineDrawing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Modular_Board"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pattern"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#PatternBuilding"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pattern_Recognition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Tile_Placement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Tile_Placement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Tile_Placement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Areas"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#LineDrawing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Modular_Board"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#PatternBuilding"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Pattern_Recognition"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Token -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Token">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Trading -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Trading">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Trick-Taking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Trick-Taking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Gamble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#VariablePhaseOrder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#VariablePhaseOrder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Phase"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Variable_Player_Powers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Variable_Player_Powers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Assymetry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Victory_Points -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Victory_Points">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Voting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Voting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Action"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#part-of"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Expression"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#point-to-pointMovement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#point-to-pointMovement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Movement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#time-track -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#time-track">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/joshuakirtz/ontologies/2017/6/untitled-ontology-2#Phase"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
